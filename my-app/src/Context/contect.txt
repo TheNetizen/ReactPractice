@@ -1,0 +1,30 @@
+context provides a way to pass data through a component tree 
+without having to pass props down manually at every level
+
+Step1= Create userContext using createContext()
+make sure to import provider and consumer
+
+const UserContext=createContext()
+const UserProvider=UserContext.Provider
+const UserConsumer=UserContext.Consumer
+
+Step2= Include the Provider component in the parent and wrap the main parent 
+inside provider and provide value this value can be used by any child.
+
+<UserProvider value='Harshita'>
+    <ComponentC/>
+    </UserProvider>
+
+Step3= use UserConsumer in the child component and use value 
+<UserConsumer>
+                {(username)=>{
+                  return <div>Hello {username}</div>
+                }}
+            </UserConsumer>
+
+
+we can pass default value in context 
+const UserContext=createContext('Harshita')
+
+  only   <ComponentC/> in app.js codes work fine no need of provider
+    
