@@ -1,8 +1,8 @@
 import React from 'react'
 // import User from './PROP-RENDER/User';
-import HoverCounterTwo from './PROP-RENDER/HoverCounterTwo';
-import ClickCounterTwo from './PROP-RENDER/ClickCounterTwo';
-import Counter from './PROP-RENDER/Counter';
+// import HoverCounterTwo from './PROP-RENDER/HoverCounterTwo';
+// import ClickCounterTwo from './PROP-RENDER/ClickCounterTwo';
+// import Counter from './PROP-RENDER/Counter';
 import ComponentC from './Context/ComponentC';
 import { UserProvider } from './Context/UserContext';
 // import ClickCounter from './HOC/ClickCounter';
